@@ -1,0 +1,24 @@
+enqueue styles with different register name to avoid overitten by the newly enqueue styles.
+
+register script with thesame name so you can enqueue it where you  want it enqueue.
+
+enqueue script (touch pounch after jquery ui).
+
+all enqueue script is done on head.php
+
+you can also enqueue at function.php
+
+IN ITEM.PHP
+============
+to fix the last 2 images link
+CHANGE:
+class="bx-navi<?php if($i + 2 == osc_count_item_resources())
+
+TO:
+
+class="bx-navi<?php if($i == osc_count_item_resources())
+
+
+VALIDATE FORM IN ITEMEDIT.PHP
+
+

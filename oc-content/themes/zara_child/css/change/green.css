@@ -1,0 +1,24 @@
+﻿
+#video-block {
+display: none;
+}
+#top-cat, #footer-contact{
+border-color:#e8e8e8;
+background-color: #37bc9b;
+}
+.search-wrap{
+border: 1px solid #e8e8e8;
+background-color: #ffffff;
+}
+#top-bar{
+background-color: #37bc9b;
+
+}
+
+@media screen and (max-width: 480px) {
+.ul-box { background-color:#37bc9b; }
+#top-bar { background-color:#37bc9b; }
+.resp-logo-wrap.is767{ background-color:#37bc9b; }
+}
+
+

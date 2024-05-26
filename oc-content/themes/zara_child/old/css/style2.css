@@ -1,0 +1,38 @@
+
+#uniform-sCategory {
+    position: relative;
+    float: left;
+    width: 30%;
+    background: #000;
+    height: 45px;
+    padding: 0;
+    border-top: 1px solid 
+    border-bottom: 1px solid #ddd;
+    margin: 0;
+    font-size: 13px;
+}
+body{
+background:red;
+}
+
+div.search_limits label{
+text-color: green;
+}
+
+.two_input{
+
+}
+
+#custom_attributes .detail_label {
+width: 150px;
+}
+#plugin-details > #custom_attributes > table {margin:0 0 25px 0!important;float:left;width:100%;clear:both;}
+
+#custom_attributes .detail_custom_fields {
+width: 100%;
+display:none;
+}
+
+
+.two_input{ display:none;}
+

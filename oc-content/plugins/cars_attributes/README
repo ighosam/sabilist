@@ -1,0 +1,88 @@
+Car attributes, modified by Sam  August 08, 2018
+
+1) Mileage slider added,
+2) Year slider added.
+
+This plugin is installed just like any other plugin.
+
+
+Change that may be required
+----------------------------
+modify get_maxmileage.php change the database query string: 'oc_t_item_car_attr', change this string to match your database, find the right string
+from phpmyadmin usually the first two letters oc need to change to match your database.
+
+DEPENCY
+=========
+JQUERY SCRIPT.
+
+1) price_format
+
+2) jquery-ui
+
+3) jquery.ui.touch-punch
+
+4) jquery
+
+NOTE: Jquery.ui.touch-punch depends on jquery-ui, follow the example in functions.php on how to enque these scripts
+
+CREAT CHILD THEME FOR EACH THEME.
+   --inside the child theme, create functions.php 
+   --then enqueue these script in it.
+   -- copy the folder price_slider to your child theme.
+   -- enque the slider's css file in your functions.php
+
+=========================================================================
+INSTRUCTIONS BELOW THIS POINT IS FOR DEVELOPERS ONLY (SAM)
+==========================================================================
+addition needed done.
+=====================
+
+for year slider, add this to the index.php in car attributes:
+
+case 'yearMin':
+					if ( (int)$value >= $min_year && (int)$value <= date('Y') ){
+						Search::newInstance()->addConditions(sprintf("%st_item_car_attr.i_year >= '%s'", DB_TABLE_PREFIX, (int)$value));
+						$has_conditions = true;
+					}
+				break;
+				case 'yearMax':
+					if ( (int)$value >= $min_year && (int)$value <= date('Y') ){
+						Search::newInstance()->addConditions(sprintf("%st_item_car_attr.i_year <= '%s'", DB_TABLE_PREFIX, (int)$value));
+						$has_conditions = true;
+
+
+
+
+
+for maileage, add this to the index.php in car attributes:
+
+      
+				case 'mileageMin':
+					if ( (int)$value >= 0 && (int)$value <= $max_kilometer ) {
+						Search::newInstance()->addConditions(sprintf("%st_item_car_attr.i_kilometers >= '%s'", DB_TABLE_PREFIX, (int)$value));
+						$has_conditions = true;
+					}
+				break;
+				case 'mileageMax':
+					if ( (int)$value >= 0 && (int)$value <= $max_kilometer ) {
+						Search::newInstance()->addConditions(sprintf("%st_item_car_attr.i_kilometers <= '%s'", DB_TABLE_PREFIX, (int)$value));
+						$has_conditions = true;
+					}
+				break;
+
+
+
+--------- include 'get_maxmileage.php' at the top of the file
+
+---------- place these lines inside function cars_search_conditions
+                     $max  = get_max_mileage();
+                     $max_kilometer = $max['max_mileage'];
+
+					 $min = get_min_year(); 
+					 $min_year = $min['min_year']; 
+
+=======================================================================================================
+
+
+
+

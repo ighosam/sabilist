@@ -1,0 +1,28 @@
+price slider varsion 1.0
+
+This script was modified and more functions added by Sam 
+
+DEPENCY
+=========
+JQUERY SCRIPT.
+
+1) price_format
+
+2) jquery-ui
+
+3) jquery.ui.touch-punch
+
+4) jquery
+
+NOTE: Jquery.ui.touch-punch depends on jquery-ui, follow the example in functions.php on how to enque these scripts
+
+CREAT CHILD THEME FOR EACH THEME.
+   --inside the child theme, create functions.php 
+   --then enqueue these script in it.
+   -- copy the folder price_slider to your child theme.
+   -- enque the slider css file in your functions.php
+
+
+LOCATE THE FILE IN YOUR THEME WHERE PRICE INPUT IS (IN ONE OF THE SEARCH FILES)
+------copy the file to your child theme
+------ include price_slider.php in this file (require_once 'price_slider/price_slider.php')

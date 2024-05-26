@@ -1,0 +1,154 @@
+/*
+//========================================
+.one_input #mileage-range {border:1px solid #aaa;float:left;clear;both;width:92%;margin:5px 4%;font-size:14px;border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px;}
+.one_input #mileage-range .ui-corner-all {border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px;}
+.one_input #mileage-range .ui-slider-range {background:#f8f8f8;}
+.one_input #mileage-range .ui-slider-handle {background: #f0f0f0; border: 1px solid #999;cursor:pointer;}
+.one_input #mileage-range .ui-slider-handle.ui-state-hover {border:1px solid #444;}
+.one_input #mileage-range .ui-slider-handle.ui-state-focus {background:#fff;border:1px solid #444;}
+.one_input #kilo-min, .one_input #kilo-max, .one_input #kilo-del .one_input #klabel{float:left;width:auto;line-height:16px;clear:none;border:0; color:#00BCD4; font-weight:bold;font-size:14px;line-height: 2;}
+.one_input #kilo-del {margin:0 3px;} 
+
+
+
+
+.one_input{display:relative;}
+
+.lnup{
+float:left;
+margin-left: 10px;
+line-height: 2.2;
+color: #00BCD4
+}
+
+#klabel h6{
+margin-bottom:5px;
+color: #000000
+}
+
+#kilo-max {margin-left: 0.3px;}
+
+
+
+.one_input #year-range {border:1px solid #aaa;float:left;clear;both;width:92%; margin:5px4%;font-size:14px;border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px;}
+.one_input #year-range .ui-corner-all {border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px;}
+.one_input #year-range .ui-slider-range {background:#f8f8f8;}
+//.one_input #year-range .ui-slider-handle {background: #f0f0f0; border: 1px solid #999;cursor:pointer;}
+.one_input #year-range .ui-slider-handle.ui-state-hover {border:1px solid #444;}
+.one_input #year-range .ui-slider-handle.ui-state-focus {background:#fff;border:1px solid #444;}
+.one_input #year-min, .one_input #year-max, .one_input #year-del .one_input #ylabel{float:left;width:auto;line-height:16px;clear:none;border:0; color:#00BCD4; font-weight:bold;font-size:14px;line-height: 2;}
+.one_input #year-del {margin:0 3px;} 
+
+
+#ylabel h6{
+margin-bottom:5px;
+color: #000000
+}
+
+#year-max {margin-left: 0.3px;}
+
+
+//======================================
+
+
+
+
+
+.ui-state-default:first-of-type, .ui-widget-content .ui-state-default:first-of-type, .ui-widget-header .ui-state-default:first-of-type {
+    background: blue;
+}
+.ui-state-default:last-of-type, .ui-widget-content .ui-state-default:last-of-type, .ui-widget-header .ui-state-default:last-of-type {
+    background: green;
+}
+
+.one_input #year-range .ui-slider-handle:first-of-type {background: red; border: 1px solid #999;cursor:pointer;
+z-index: 1;
+
+}
+
+.ui-state-focus
+{
+z-index:100;
+}
+
+
+#video-block {
+display: none;
+}
+#top-cat, #footer-contact{
+border-color:#e8e8e8;
+background-color: #ffffff;
+}
+.search-wrap{
+border: 1px solid #e8e8e8;
+background-color: #ffffff;
+}
+#top-bar{
+background-color: #ffffff;
+
+}
+
+@media screen and (max-width: 480px) {
+.ul-box { background-color:#ffffff; }
+#top-bar { background-color:#ffffff; }
+.resp-logo-wrap.is767{ background-color:#ffffff; }
+}
+
+
+
+*/
+#mileage-range, #year-range, #price-range {border:1px solid #aaa;float:left;clear;both;width:92%;margin:5px 4%;font-size:14px;border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px;}
+#mileage-range .ui-slider-range, #year-range .ui-slider-range,#price-range .ui-slider-range {background:#f8f8f8;}
+#mileage-range .ui-slider-handle, #year-range .ui-slider-handle,#price-range .ui-slider-handle {background: #f0f0f0; border: 1px solid #999;cursor:pointer;} 
+
+
+
+.fleft {
+
+       float:left;
+       margin-bottom:5px;
+
+       }
+.slider_input{
+			margin-top:4px;
+            margin-bottom:0px;
+           width:92%
+           margin:5px4%
+         }
+
+.mileage{
+			margin-top:24px;
+            margin-bottom:24px;
+         }
+
+.slider_fllft{
+        margin-top: 6px;
+		margin-bottom: 2px;
+             }
+#klabel, #plabel, #ylabel{
+        margin-right: 4px;
+       }
+
+#kilo-del,#year-del,#amount-del{
+        margin-right:2px;
+        margin-left:2px;
+       color:#00BCD4;
+       font-weight: bold;
+}
+#kilo-min,#kilo-max,#year-min,#year-max,#amount-min,#amount-max
+{
+font-size: 1em;
+color:#00BCD4;
+font-weight: bold;
+}
+
+
+ /*use for zara theme.*/
+
+
+.slider_fllft{
+        margin-bottom: 30px;
+              }
+
+
+
